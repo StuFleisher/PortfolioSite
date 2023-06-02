@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+
+}
+
+.dev-test {
+    background-color: #f9eb6d;
+}
+
+.color-dark { color:#151515 ;}
+.bg-dark {background-color: #151515;}
+.color-light {color:#FAEEDC;}
+.color-light1 {color: #f7e5c9}
+.bg-light {background-color: #FAEEDC ;}
+.color-bold {color:#F2542D;}
+.bg-bold {background-color:#F2542D;}
+.color-accent1 {color: #f9eb6d;}
+.bg-accent1 {background-color: #f9eb6d;}
+.color-accent2 {color: #F69279;}
+.bg-accent2 {background-color: #F69279;}
+
+/* high level styling */
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #FAEEDC;
+}
+
+section {
+    background-color: #FAEEDC;
+    margin: 50px 0px;
+}
+
+.h-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding:15px;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.v-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Text Styling */
+
+p {
+    line-height: 225%;
+    margin-bottom: 1em;
+    font-size: .9em;
+}
+
+h1 {
+    font-size: 10em;
+    margin-bottom:10px;
+    font-family: 'Passion One', sans-serif;
+    font-weight: 900;
+}
+
+h3 {
+    margin-bottom: 50px;
+    margin:auto;
+    display:block;
+    padding: 30px;
+    width: fit-content;
+
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+
+    color: #7E78D2;
+}
+
+span.accent{
+    color: #5FB49C;
+    font-size: 2.5rem;
+    padding: 0px 5px;
+}
+
+a {
+    color: #5FB49C;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: none;
+}
+a:hover{
+    color: #7E78D2;
+}
+
+
+strong {
+
+    font-weight: 900;
+}
+
+
+
+
+/* "NAV" STYLING */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+
+nav a, footer a {
+    color:#5FB49C;
+    text-decoration: none;
+}
+
+nav a:hover, footer a:hover {
+    color: #7E78D2;
+}
+
+.nav-list {
+    margin-right:10px;
+    min-width: max-content;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-weight: 600;
+}
+
+nav .nav-list > *{
+    padding:15px;
+    font-size: .75em;
+}
+
+nav .icon-Stu {
+    font-family: 'Passion One', sans-serif;
+    font-weight: 600;
+    margin-left: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+/* "Hero" styling */
+
+#hero {
+    margin-top: 0px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    height: max-content;
+}
+
+#hero img {
+    max-width: 50%;
+    height:auto;
+    align-self:flex-start;
+}
+
+#hero li {
+    text-decoration: line-through;
+    opacity: 25%;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2em;
+}
+
+#hero li:last-child {
+    text-decoration: none;
+    opacity: 100%;
+    font-size: 2.5rem;
+}
+
+
+/* "About" styling*/
+
+#about .about-text  {
+    padding: 5px;
+    min-width: 400px;
+    max-width: 60%;
+}
+
+#about img {
+    display:block;
+    margin: auto;
+}
+
+@media (max-width: 780px){
+    #about .h-container > * {
+        max-width: 80%;
+    }
+}
+
+
+
+
+/* "Work" Styling */
+
+#work {
+    background-color: #f7e5c9;
+}
+
+#work .h-container {
+    background-color: #f7e5c9;
+    padding:10px;
+}
+
+.sample {
+    max-width: 50%;
+    position:relative;
+    display:block;
+    line-height: 0px;
+    background-color: #F2542D;
+}
+
+
+
+.sample img {
+    width:100%;
+    aspect-ratio: 16 / 9;
+    object-fit: shrink;
+    object-position: 50% 50%;
+}
+
+.sample:hover img {
+    opacity: 10%
+}
+
+.sample:hover .description {
+    visibility: visible;
+}
+
+
+.description {
+    visibility: hidden;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:#FAEEDC;
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+
+@media (max-width: 800px){
+    .sample {
+        max-width: 100%;
+    }
+}
+
+/* "Contact" Styling */
+
+#contact {
+    justify-content: center;
+    align-items: center;
+}
+
+#contact.h-container {
+    justify-content: center;
+}
+
+form * {
+    display: block;
+    margin-bottom: 1em;
+    padding: .5em;
+    font-family: 'Space Grotesk', sans-serif;
+    resize: none;
+    border: 1px #7E78D2 solid ;
+    line-height: 225%;
+    margin-bottom: 1em;
+    font-size: .9em;
+}
+
+button {
+    background-color: #7E78D2;
+    color:#FAEEDC;
+    border: none
+}
+
+button:hover {
+    background-color:#5FB49C;
+}
+
+#message {
+    width: 500px;
+}
+
+#contact img {
+    padding:35px
+}
+
+
+/* Footer styling */
+
+footer {
+    background-color: #151515;
+}
+
+footer ul {
+    font-size:1rem;
+    margin:auto;
+    display:flex;
+    justify-content: space space-around;
+}
+
+footer li {
+    padding: 25px;
+    display: inline-block;
+    max-width:33%;
+    margin: auto;
+    text-align: center;
+    line-height: 2em;
+    color:#5FB49C;
+
+}
+
+@media (max-width: 800px){
+    .hide-small {
+        display: none;
+        background-color:#F2542D;
+    }
+
+}
