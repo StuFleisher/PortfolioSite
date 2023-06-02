@@ -286,6 +286,16 @@ form * {
     font-size: .9em;
 }
 
+form p {
+    border: none;
+    line-height: 1rem;
+    margin-top:2rem;
+    margin-bottom: 0px;
+    margin-left: -8px;
+    font-weight: 600;
+    color:#7E78D2;
+}
+
 button {
     background-color: #7E78D2;
     color:#FAEEDC;
